@@ -1,0 +1,72 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  background-color: #dadada;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-family: times;
+  margin-left: 2%;
+}
+
+h1.title{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.preview h1{
+  position: absolute;
+  margin: 5%;
+}
+
+img {
+  width: 100%;
+  padding: 2%;
+}
+
+.preview{
+  position: relative;
+}
+
+.container {
+  margin: 2%;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title {
+  margin: 5% 0 2% 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 575px){
+
+.preview{
+  display: inline-block;
+  width: 48%;
+  padding: 1%;
+  max-height: 185px;
+  overflow: hidden;
+}
+
+.preview.london,
+.preview.rome{
+  float: right;
+}
+
+@media screen and (min-width: 991px){
+
+.preview{
+  float: left;
+  width: 25%;
+  height: 130px;
+  overflow: hidden;
+}
+
+}
